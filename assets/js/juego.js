@@ -92,7 +92,7 @@ const turnoComputadora = (puntosMinimos) => {
     puntosHTML[1].innerText = puntosComputadora;
     //se va a crear un elemento de tipo img y seguarda en imgCarta
     const imgCarta = document.createElement("img");
-    imgCarta.src = `./cartas/${carta}.png`;
+    imgCarta.src = `./assets/cartas/${carta}.png`;
     imgCarta.classList.add("carta");
 
     divCartasComputadora.append(imgCarta);
@@ -126,7 +126,7 @@ btnPedir.addEventListener("click", () => {
   //se crea un elemento img y se guarda en imgCarta
   const imgCarta = document.createElement("img");
   //el elemento se le agregara el source para que asi contenga la imagen guardada y se le pone la ubicacion
-  imgCarta.src = `./cartas/${carta}.png`;
+  imgCarta.src = `./assets/cartas/${carta}.png`;
   //se le agrega una clase para darle formato
   imgCarta.classList.add("carta");
   //divCartasJugador es el padre en el DOM que contendra la imagen para que se acople al area del jugador en el HTMl
